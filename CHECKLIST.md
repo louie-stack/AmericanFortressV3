@@ -10,7 +10,7 @@ Status key: [ ] not started · [~] in progress · [x] done
 ## Phase 1 — Top of Page
 - [x] Navigation CTA update (Reserve FortressName™ | Explore SDK →)
 - [x] Hero section (full replace)
-- [ ] Traction stats bar (add)
+- [x] Traction stats bar (add)
 - [ ] Hide My Balance interactive demo (add)
 
 ## Phase 2 — Core Narrative
