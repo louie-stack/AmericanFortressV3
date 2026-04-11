@@ -192,39 +192,49 @@ html, body {
         <div class="w-layout-blockcontainer container w-container">
           <div class="problem-wrap">
             <div class="problem-copy">
-              <h2 class="problem-title">Every wallet is an open book.</h2>
+              <h2 class="problem-title">Every wallet is an <span>open book.</span></h2>
               <p class="problem-text">Right now, every transaction you make on any blockchain is fully visible. Your balance, your counterparties, your entire financial history — available to anyone with a block explorer.</p>
             </div>
-            <div class="problem-compare">
-              <div class="problem-col">
-                <h3>Without AF</h3>
-                <ul>
-                  <li>Address visible</li>
-                  <li>Balance: $384K</li>
-                  <li>847 txns exposed</li>
-                  <li>Binance counterparty visible</li>
-                  <li>DeFi positions traceable</li>
-                  <li>Linked wallets map-able</li>
-                  <li>High phishing risk</li>
-                </ul>
+
+            <div class="problem-main">
+              <div class="problem-left">
+                <div class="problem-tabs">
+                  <button type="button" class="problem-tab">Without AF - Exposed</button>
+                  <button type="button" class="problem-tab active">With AmericanFortress</button>
+                </div>
+
+                <div class="problem-wallet-card">
+                  <div class="wallet-head">
+                    <span>Wallet scan</span>
+                    <span class="wallet-pill">Protected</span>
+                  </div>
+                  <div class="wallet-address">0x7a3b9f2c8e1d4a6b5c3e9f8a2d1c4b7e6f9a8c3d</div>
+                  <div class="wallet-row"><span>Total Balance</span><strong>Hidden ✓</strong></div>
+                  <div class="wallet-row"><span>Transactions (30d)</span><strong>Private</strong></div>
+                  <div class="wallet-row"><span>Top counterparty</span><strong>Hidden</strong></div>
+                  <div class="wallet-row"><span>DeFi positions</span><strong>Private</strong></div>
+                  <div class="wallet-row"><span>Linked wallets</span><strong>Untraceable</strong></div>
+                  <div class="wallet-row"><span>Phishing risk</span><strong>Eliminated</strong></div>
+                </div>
               </div>
-              <div class="problem-col af">
-                <h3>With AmericanFortress</h3>
-                <ul>
-                  <li>Address hidden</li>
-                  <li>Balance hidden</li>
-                  <li>Transaction graph hidden</li>
-                  <li>Counterparty relationship hidden</li>
-                  <li>Positions hidden</li>
-                  <li>Linked wallets hidden</li>
-                  <li>Phishing surface minimized</li>
-                </ul>
+
+              <div class="problem-right">
+                <div class="problem-stat-item">
+                  <div class="value">$33T</div>
+                  <div class="desc">Stablecoin volume settled in 2025 — fully transparent</div>
+                  <div class="source">Source: Bloomberg / TRM Labs</div>
+                </div>
+                <div class="problem-stat-item">
+                  <div class="value">88%</div>
+                  <div class="desc">Of all crypto transactions have zero privacy protection</div>
+                  <div class="source">Source: Chainalysis Q1 2025</div>
+                </div>
+                <div class="problem-stat-item">
+                  <div class="value">820M+</div>
+                  <div class="desc">Wallet addresses with fully exposed transaction histories</div>
+                  <div class="source">Source: Chainalysis 2025</div>
+                </div>
               </div>
-            </div>
-            <div class="problem-stats">
-              <div>$33T stablecoin volume settled in 2025 fully transparent <span>(Bloomberg / TRM Labs)</span></div>
-              <div>88% of crypto transactions have zero privacy protection <span>(Chainalysis Q1 2025)</span></div>
-              <div>820M+ wallet addresses with fully exposed transaction histories <span>(Chainalysis 2025)</span></div>
             </div>
           </div>
         </div>
