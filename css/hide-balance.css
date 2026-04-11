@@ -109,6 +109,12 @@
   color: #fdfaf4;
   border: 0;
   padding: 4px 0;
+  gap: 14px;
+}
+
+.hb-toggle > span:first-child {
+  white-space: nowrap;
+  font-size: 1.02rem;
 }
 
 .hb-switch { width: 42px; height: 22px; background: #e61e25; border-radius: 999px; position: relative; }
