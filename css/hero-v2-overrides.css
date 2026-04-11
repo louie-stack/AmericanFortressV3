@@ -16,10 +16,12 @@
   content: "";
   position: absolute;
   inset: 0 0 auto;
-  height: 42%;
-  background-image: radial-gradient(rgba(162, 198, 255, .14) 1px, transparent 1px);
-  background-size: 12px 12px;
-  opacity: .7;
+  height: 46%;
+  background-image: url('../images/halftone.png');
+  background-position: 50% 0;
+  background-repeat: repeat-x;
+  background-size: auto 360px;
+  opacity: .35;
   pointer-events: none;
 }
 
