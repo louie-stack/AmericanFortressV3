@@ -1,6 +1,6 @@
 .section-2.section-problem {
   background: #dfd8bf;
-  padding: 140px 26px 90px;
+  padding: 160px 26px 120px;
   position: relative;
 }
 
@@ -21,20 +21,20 @@
 }
 
 .problem-wrap { max-width: 1120px; margin: 0 auto; position: relative; z-index: 1; }
-.problem-copy { text-align: center; margin-bottom: 34px; }
+.problem-copy { text-align: center; margin-bottom: 48px; }
 .problem-title {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   font-family: Monumentextended, Arial, sans-serif;
   text-transform: uppercase;
   color: #124983;
   letter-spacing: .01em;
-  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-size: clamp(1.7rem, 3.1vw, 2.7rem);
 }
 .problem-title span { color: #e92027; }
-.problem-text { color: #1d4c84; max-width: 920px; margin: 0 auto; font-size: 1.15rem; line-height: 1.4; }
+.problem-text { color: #1d4c84; max-width: 920px; margin: 0 auto; font-size: 1.15rem; line-height: 1.5; }
 
-.problem-main { display: grid; grid-template-columns: 1.15fr .85fr; gap: 38px; align-items: start; }
-.problem-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.problem-main { display: grid; grid-template-columns: 1.15fr .85fr; gap: 52px; align-items: start; }
+.problem-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
 .problem-tab {
   border: 1px solid #4a6f9a;
   background: transparent;
@@ -53,13 +53,13 @@
   overflow: hidden;
   box-shadow: inset 0 2px 8px rgba(209,230,255,.28);
 }
-.wallet-head { display: flex; justify-content: space-between; align-items: center; padding: 20px 26px 14px; color: #d7e8ff; text-transform: uppercase; font-weight: 700; }
+.wallet-head { display: flex; justify-content: space-between; align-items: center; padding: 22px 26px 16px; color: #d7e8ff; text-transform: uppercase; font-weight: 700; }
 .wallet-pill { background: #18d98f; color: #eafff8; border-radius: 999px; padding: 6px 16px; font-size: .95rem; }
-.wallet-address { margin: 0 26px 12px; background: rgba(255,255,255,.06); border: 1px solid rgba(177,203,237,.22); border-radius: 8px; padding: 10px 12px; color: #b9d0f2; font-size: .9rem; }
-.wallet-row { display: flex; justify-content: space-between; padding: 14px 26px; border-top: 1px solid rgba(173,198,231,.22); color: #dbe9ff; }
+.wallet-address { margin: 0 26px 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(177,203,237,.22); border-radius: 8px; padding: 12px 12px; color: #b9d0f2; font-size: .9rem; }
+.wallet-row { display: flex; justify-content: space-between; padding: 16px 26px; border-top: 1px solid rgba(173,198,231,.22); color: #dbe9ff; }
 .wallet-row strong { color: #0ee19a; font-size: 1.05rem; }
 
-.problem-right { display: grid; gap: 28px; padding-top: 12px; }
+.problem-right { display: grid; gap: 34px; padding-top: 14px; }
 .problem-stat-item { border-left: 4px solid #e82227; padding-left: 20px; color: #124983; }
 .problem-stat-item .value { font-family: Monumentextended, Arial, sans-serif; font-size: clamp(2.1rem, 4vw, 3.2rem); line-height: 1; margin-bottom: 8px; }
 .problem-stat-item .desc { font-size: 1.9rem; font-weight: 700; line-height: 1.25; margin-bottom: 8px; }
