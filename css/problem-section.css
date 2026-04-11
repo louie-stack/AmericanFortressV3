@@ -38,14 +38,14 @@
 .problem-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 18px; }
 .problem-tab {
   border: 1px solid #4a6f9a;
-  background: transparent;
+  background: #f1ecda;
   color: #184d84;
   border-radius: 9px;
   padding: 13px 14px;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 700;
 }
-.problem-tab.active { background: #184d84; color: #f0f5ff; }
+.problem-tab.active { background: #184d84; color: #f0f5ff; border-color: #184d84; }
 
 .problem-wallet-card {
   background: linear-gradient(180deg, #2c5688 0%, #254d7d 100%);
@@ -56,15 +56,17 @@
 }
 .wallet-head { display: flex; justify-content: space-between; align-items: center; padding: 22px 26px 16px; color: #d7e8ff; text-transform: uppercase; font-weight: 700; }
 .wallet-pill { background: #18d98f; color: #eafff8; border-radius: 999px; padding: 6px 16px; font-size: .95rem; }
+.problem-wallet-card.is-exposed .wallet-pill { background: #e92027; }
 .wallet-address { margin: 0 26px 14px; background: rgba(255,255,255,.06); border: 1px solid rgba(177,203,237,.22); border-radius: 8px; padding: 12px 12px; color: #b9d0f2; font-size: .9rem; }
 .wallet-row { display: flex; justify-content: space-between; padding: 16px 26px; border-top: 1px solid rgba(173,198,231,.22); color: #dbe9ff; }
 .wallet-row strong { color: #0ee19a; font-size: 1.05rem; }
+.problem-wallet-card.is-exposed .wallet-row strong { color: #ffd8d9; }
 
-.problem-right { display: grid; gap: 34px; padding-top: 14px; }
-.problem-stat-item { border-left: 4px solid #e82227; padding-left: 20px; color: #124983; }
-.problem-stat-item .value { font-family: Monumentextended, Arial, sans-serif; font-size: clamp(2.1rem, 4vw, 3.2rem); line-height: 1; margin-bottom: 8px; }
-.problem-stat-item .desc { font-size: 1.9rem; font-weight: 700; line-height: 1.25; margin-bottom: 8px; }
-.problem-stat-item .source { color: #6d6e69; font-size: 1rem; }
+.problem-right { display: grid; gap: 30px; padding-top: 14px; }
+.problem-stat-item { border-left: 4px solid #e82227; padding-left: 18px; color: #124983; }
+.problem-stat-item .value { font-family: Monumentextended, Arial, sans-serif; font-size: clamp(1.9rem, 3.2vw, 2.6rem); line-height: 1; margin-bottom: 7px; }
+.problem-stat-item .desc { font-size: 1.15rem; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
+.problem-stat-item .source { color: #6d6e69; font-size: .92rem; }
 
 @media screen and (max-width: 991px) {
   .section-2.section-problem { padding-top: 120px; }

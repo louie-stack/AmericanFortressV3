@@ -199,22 +199,22 @@ html, body {
             <div class="problem-main">
               <div class="problem-left">
                 <div class="problem-tabs">
-                  <button type="button" class="problem-tab">Without AF - Exposed</button>
-                  <button type="button" class="problem-tab active">With AmericanFortress</button>
+                  <button type="button" id="problem-tab-without" class="problem-tab">Without AF - Exposed</button>
+                  <button type="button" id="problem-tab-with" class="problem-tab active">With AmericanFortress</button>
                 </div>
 
-                <div class="problem-wallet-card">
+                <div id="problem-wallet-card" class="problem-wallet-card">
                   <div class="wallet-head">
                     <span>Wallet scan</span>
-                    <span class="wallet-pill">Protected</span>
+                    <span id="problem-wallet-pill" class="wallet-pill">Protected</span>
                   </div>
-                  <div class="wallet-address">0x7a3b9f2c8e1d4a6b5c3e9f8a2d1c4b7e6f9a8c3d</div>
-                  <div class="wallet-row"><span>Total Balance</span><strong>Hidden ✓</strong></div>
-                  <div class="wallet-row"><span>Transactions (30d)</span><strong>Private</strong></div>
-                  <div class="wallet-row"><span>Top counterparty</span><strong>Hidden</strong></div>
-                  <div class="wallet-row"><span>DeFi positions</span><strong>Private</strong></div>
-                  <div class="wallet-row"><span>Linked wallets</span><strong>Untraceable</strong></div>
-                  <div class="wallet-row"><span>Phishing risk</span><strong>Eliminated</strong></div>
+                  <div id="problem-wallet-address" class="wallet-address">0x7a3b9f2c8e1d4a6b5c3e9f8a2d1c4b7e6f9a8c3d</div>
+                  <div class="wallet-row"><span>Total Balance</span><strong id="problem-balance">Hidden ✓</strong></div>
+                  <div class="wallet-row"><span>Transactions (30d)</span><strong id="problem-tx">Private</strong></div>
+                  <div class="wallet-row"><span>Top counterparty</span><strong id="problem-counterparty">Hidden</strong></div>
+                  <div class="wallet-row"><span>DeFi positions</span><strong id="problem-defi">Private</strong></div>
+                  <div class="wallet-row"><span>Linked wallets</span><strong id="problem-linked">Untraceable</strong></div>
+                  <div class="wallet-row"><span>Phishing risk</span><strong id="problem-risk">Eliminated</strong></div>
                 </div>
               </div>
 
@@ -801,6 +801,52 @@ html, body {
         state.textContent = next ? 'Hidden ✓' : 'Balance exposed';
         address.textContent = next ? '0x7a3b...f91c' : '0xpublic...f91c';
       });
+    })();
+
+    (function () {
+      const tabWithout = document.getElementById('problem-tab-without');
+      const tabWith = document.getElementById('problem-tab-with');
+      const card = document.getElementById('problem-wallet-card');
+      const pill = document.getElementById('problem-wallet-pill');
+      const addr = document.getElementById('problem-wallet-address');
+      const balance = document.getElementById('problem-balance');
+      const tx = document.getElementById('problem-tx');
+      const counterparty = document.getElementById('problem-counterparty');
+      const defi = document.getElementById('problem-defi');
+      const linked = document.getElementById('problem-linked');
+      const risk = document.getElementById('problem-risk');
+      if (!tabWithout || !tabWith || !card || !pill || !addr || !balance || !tx || !counterparty || !defi || !linked || !risk) return;
+
+      function apply(withAF) {
+        tabWith.classList.toggle('active', withAF);
+        tabWithout.classList.toggle('active', !withAF);
+
+        card.classList.toggle('is-exposed', !withAF);
+
+        if (withAF) {
+          pill.textContent = 'Protected';
+          addr.textContent = '0x7a3b9f2c8e1d4a6b5c3e9f8a2d1c4b7e6f9a8c3d';
+          balance.textContent = 'Hidden ✓';
+          tx.textContent = 'Private';
+          counterparty.textContent = 'Hidden';
+          defi.textContent = 'Private';
+          linked.textContent = 'Untraceable';
+          risk.textContent = 'Eliminated';
+        } else {
+          pill.textContent = 'Exposed';
+          addr.textContent = '0x91bc4f7c2d9ea5f8842df0c68a4b8cd2a9f7e1cc';
+          balance.textContent = '$384,297';
+          tx.textContent = '847 visible';
+          counterparty.textContent = 'Binance';
+          defi.textContent = 'Traceable';
+          linked.textContent = 'Map-able';
+          risk.textContent = 'High';
+        }
+      }
+
+      tabWith.addEventListener('click', function () { apply(true); });
+      tabWithout.addEventListener('click', function () { apply(false); });
+      apply(true);
     })();
   </script>
 </body>
