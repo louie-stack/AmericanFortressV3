@@ -62,7 +62,7 @@
 .wallet-row strong { color: #0ee19a; font-size: 1.05rem; }
 .problem-wallet-card.is-exposed .wallet-row strong { color: #ffd8d9; }
 
-.problem-right { display: grid; gap: 30px; padding-top: 14px; }
+.problem-right { display: grid; gap: 30px; padding-top: 64px; }
 .problem-stat-item { border-left: 4px solid #e82227; padding-left: 18px; color: #124983; }
 .problem-stat-item .value { font-family: Monumentextended, Arial, sans-serif; font-size: clamp(1.9rem, 3.2vw, 2.6rem); line-height: 1; margin-bottom: 7px; }
 .problem-stat-item .desc { font-size: 1.15rem; font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
@@ -71,4 +71,5 @@
 @media screen and (max-width: 991px) {
   .section-2.section-problem { padding-top: 120px; }
   .problem-main { grid-template-columns: 1fr; }
+  .problem-right { padding-top: 0; }
 }
