@@ -1,13 +1,13 @@
 .how-works-section {
   background: #dfd8bf;
-  padding: 90px 0;
+  padding: 44px 0 64px;
   border-top: 0;
   border-bottom: 1px solid rgba(22, 68, 120, .14);
 }
 
 .how-works-head {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .how-works-head h2 {
@@ -30,16 +30,18 @@
 }
 
 .how-step-card {
-  background: rgba(13, 38, 79, .62);
-  border: 1px solid rgba(147, 176, 223, .24);
-  border-radius: 12px;
-  padding: 18px;
+  background: linear-gradient(180deg, #2c5688 0%, #254d7d 100%);
+  border: 1px solid rgba(146,181,227,.35);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: inset 0 2px 8px rgba(209,230,255,.28);
 }
 
 .how-step-number {
   color: #e92027;
   font-family: Monumentextended, Arial, sans-serif;
   margin-bottom: 10px;
+  font-size: 1.8rem;
 }
 
 .how-step-card h3 {
@@ -49,9 +51,10 @@
 
 .how-step-card p {
   margin: 0;
-  color: #bfd3f8;
+  color: #d6e6ff;
 }
 
 @media screen and (max-width: 991px) {
+  .how-works-section { padding-top: 34px; }
   .how-works-grid { grid-template-columns: 1fr; }
 }
