@@ -8,6 +8,8 @@
     linear-gradient(180deg, #0e3168 0%, #081f49 52%, #071a3d 100%);
   position: relative;
   overflow: hidden;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .section_hero.hero-v2::before {
@@ -106,8 +108,18 @@
   justify-content: center;
 }
 
+.hero-cta-grid-v2 .cta-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  white-space: nowrap;
+}
+
 .hero-stats-bar {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 1px solid rgba(152, 180, 224, .22);
