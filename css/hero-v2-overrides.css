@@ -5,7 +5,7 @@
   background-color: #071a3d;
   background-image:
     radial-gradient(circle at 50% 18%, rgba(110, 163, 246, .22) 0%, rgba(110, 163, 246, 0) 32%),
-    linear-gradient(180deg, #0A1B2B 0%, #143758 100%);
+    linear-gradient(180deg, #0e3168 0%, #081f49 52%, #071a3d 100%);
   position: relative;
   overflow: hidden;
   padding-left: 0 !important;
@@ -19,8 +19,8 @@
   right: 0;
   top: 0;
   height: 58%;
-  background-color: rgba(166, 205, 255, .7);
-  opacity: .7;
+  background-image: linear-gradient(180deg, #0A1B2B 0%, #143758 100%);
+  opacity: .82;
   -webkit-mask-image: url('../images/halftone.png');
   mask-image: url('../images/halftone.png');
   -webkit-mask-position: 50% 0;
