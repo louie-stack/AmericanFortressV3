@@ -1,89 +1,83 @@
 .conf-machine-section {
-  background: linear-gradient(180deg, #081d43 0%, #0a224c 100%);
-  padding: 82px 0;
-  border-top: 1px solid rgba(147,176,223,.2);
+  background: #dfd8bf;
+  padding: 90px 0 80px;
 }
 
 .conf-machine-head {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
 .conf-machine-head h2 {
-  margin: 0 0 10px;
-  color: #bfd9ff;
+  margin: 0 0 14px;
+  color: #124983;
   font-family: Monumentextended, Arial, sans-serif;
   text-transform: uppercase;
+  line-height: 1.08;
+  letter-spacing: .01em;
+  font-size: clamp(2rem, 4.2vw, 3.45rem);
+}
+
+.conf-machine-head h2 span {
+  color: #e92027;
 }
 
 .conf-machine-head p {
   margin: 0 auto;
+  max-width: 900px;
+  color: #1d4c84;
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+
+.conf-list {
   max-width: 860px;
-  color: #fdfaf4;
-}
-
-.conf-machine-flow {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
-  gap: 16px;
-  align-items: stretch;
-  margin-bottom: 16px;
+  gap: 34px;
 }
 
-.conf-col,
-.conf-core {
-  background: rgba(12,36,77,.62);
-  border: 1px solid rgba(147,176,223,.28);
-  border-radius: 12px;
-  padding: 16px;
+.conf-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 24px;
+  align-items: center;
 }
 
-.conf-col h3,
-.conf-core-title {
-  margin: 0 0 10px;
-  color: #fdfaf4;
+.conf-icon {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.conf-col ul {
+.conf-icon.red { background: #c73036; }
+.conf-icon.blue { background: #124983; }
+
+.conf-icon span {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.conf-text h3 {
+  margin: 0 0 8px;
+  color: #124983;
+  font-family: Monumentextended, Arial, sans-serif;
+  font-size: clamp(1.5rem, 2.9vw, 2.5rem);
+  line-height: 1.1;
+}
+
+.conf-text p {
   margin: 0;
-  padding-left: 18px;
-  color: #cfe0ff;
-  line-height: 1.6;
+  color: #4b4b4b;
+  font-size: 1.05rem;
+  line-height: 1.45;
 }
 
-.conf-core-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.conf-core-grid div {
-  background: rgba(19,55,97,.55);
-  border: 1px solid rgba(147,176,223,.2);
-  border-radius: 10px;
-  padding: 10px;
-  color: #d9e8ff;
-  text-align: center;
-}
-
-.conf-points {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 12px;
-}
-
-.conf-points div {
-  background: rgba(9,29,67,.72);
-  border: 1px solid rgba(147,176,223,.2);
-  border-radius: 10px;
-  padding: 12px;
-  color: #cfe0ff;
-}
-
-.conf-points strong { color: #fdfaf4; }
-
-@media screen and (max-width: 991px) {
-  .conf-machine-flow,
-  .conf-points,
-  .conf-core-grid { grid-template-columns: 1fr; }
+@media screen and (max-width: 767px) {
+  .conf-machine-section { padding-top: 70px; }
+  .conf-item { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .conf-text h3 { font-size: 1.5rem; }
 }
