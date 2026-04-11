@@ -171,8 +171,8 @@
   left: 0;
   right: 0;
   top: 100%;
-  height: 54px;
-  background: #1a4f84 url('../images/bottom.png') center top / 100% 54px no-repeat;
+  height: 36px;
+  background: url('../images/bottom.png') center top / 100% 36px no-repeat;
 }
 
 .hero-stat-item {
