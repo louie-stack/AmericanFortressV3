@@ -170,16 +170,16 @@
 
 /* clean transition into next section */
 .section_hero.hero-v2 + .section-2 {
-  margin-top: -30px;
-  padding-top: 180px;
+  margin-top: 0;
+  padding-top: 150px;
+  background-image: url('../images/bottom.png'), url('../images/halftone.png');
+  background-position: 50% 0, 50% 100%;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 100% 58px, auto 720px;
 }
 
 .section_hero.hero-v2 + .section-2 .image.divider-1-bottom {
-  display: block;
-  width: 100vw;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -22px;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -190,7 +190,7 @@
     max-width: 700px;
     grid-template-columns: 1fr 1fr;
   }
-  .section_hero.hero-v2 + .section-2 { margin-top: -20px; }
+  .section_hero.hero-v2 + .section-2 { margin-top: 0; }
 }
 
 @media screen and (max-width: 767px) {
