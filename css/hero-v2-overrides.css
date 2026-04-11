@@ -73,6 +73,10 @@
   font-size: .82rem;
   font-weight: 600;
   line-height: 1;
+}
+
+.hero-patent-text {
+  display: inline-block;
   transform: translateY(1px);
 }
 
