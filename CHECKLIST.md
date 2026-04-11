@@ -14,7 +14,7 @@ Status key: [ ] not started · [~] in progress · [x] done
 - [x] Hide My Balance interactive demo (add)
 
 ## Phase 2 — Core Narrative
-- [ ] Problem section (full replace)
+- [x] Problem section (full replace)
 - [ ] How It Works (3 steps)
 - [ ] Confidentiality Machine section
 - [ ] Four Pillars section
