@@ -38,10 +38,11 @@
 
 .hide-balance-text {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 1200px;
   color: #fdfaf4;
   font-size: 1.35rem;
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .hide-balance-scene {
@@ -134,6 +135,6 @@
 
 @media screen and (max-width: 767px) {
   .hide-balance-section { padding-top: 72px; }
-  .hide-balance-text { font-size: 1.05rem; }
+  .hide-balance-text { font-size: 1.05rem; white-space: normal; }
   .hide-balance-card { border-radius: 18px; padding: 16px; }
 }
