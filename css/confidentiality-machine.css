@@ -1,21 +1,21 @@
 .conf-machine-section {
   background: #F0E0B2;
-  padding: 90px 0 80px;
+  padding: 74px 0 62px;
 }
 
 .conf-machine-head {
   text-align: center;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .conf-machine-head h2 {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
   color: #124983;
   font-family: Monumentextended, Arial, sans-serif;
   text-transform: uppercase;
   line-height: 1.08;
   letter-spacing: .01em;
-  font-size: clamp(2rem, 4.2vw, 3.45rem);
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
 }
 
 .conf-machine-head h2 span {
@@ -24,29 +24,29 @@
 
 .conf-machine-head p {
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 860px;
   color: #1d4c84;
-  font-size: 1.1rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .conf-list {
-  max-width: 860px;
+  max-width: 800px;
   margin: 0 auto;
   display: grid;
-  gap: 34px;
+  gap: 28px;
 }
 
 .conf-item {
   display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 24px;
+  grid-template-columns: 118px 1fr;
+  gap: 18px;
   align-items: center;
 }
 
 .conf-icon {
-  width: 122px;
-  height: 122px;
+  width: 98px;
+  height: 98px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -57,23 +57,23 @@
 .conf-icon.blue { background: #124983; }
 
 .conf-icon span {
-  font-size: 3rem;
+  font-size: 2.35rem;
   line-height: 1;
 }
 
 .conf-text h3 {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: #124983;
   font-family: Monumentextended, Arial, sans-serif;
-  font-size: clamp(1.5rem, 2.9vw, 2.5rem);
-  line-height: 1.1;
+  font-size: clamp(1.2rem, 2.1vw, 1.9rem);
+  line-height: 1.15;
 }
 
 .conf-text p {
   margin: 0;
   color: #4b4b4b;
-  font-size: 1.05rem;
-  line-height: 1.45;
+  font-size: 1rem;
+  line-height: 1.42;
 }
 
 @media screen and (max-width: 767px) {
