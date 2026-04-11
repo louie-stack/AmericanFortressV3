@@ -1,0 +1,89 @@
+.conf-machine-section {
+  background: linear-gradient(180deg, #081d43 0%, #0a224c 100%);
+  padding: 82px 0;
+  border-top: 1px solid rgba(147,176,223,.2);
+}
+
+.conf-machine-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.conf-machine-head h2 {
+  margin: 0 0 10px;
+  color: #bfd9ff;
+  font-family: Monumentextended, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.conf-machine-head p {
+  margin: 0 auto;
+  max-width: 860px;
+  color: #fdfaf4;
+}
+
+.conf-machine-flow {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 16px;
+}
+
+.conf-col,
+.conf-core {
+  background: rgba(12,36,77,.62);
+  border: 1px solid rgba(147,176,223,.28);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.conf-col h3,
+.conf-core-title {
+  margin: 0 0 10px;
+  color: #fdfaf4;
+}
+
+.conf-col ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #cfe0ff;
+  line-height: 1.6;
+}
+
+.conf-core-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.conf-core-grid div {
+  background: rgba(19,55,97,.55);
+  border: 1px solid rgba(147,176,223,.2);
+  border-radius: 10px;
+  padding: 10px;
+  color: #d9e8ff;
+  text-align: center;
+}
+
+.conf-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.conf-points div {
+  background: rgba(9,29,67,.72);
+  border: 1px solid rgba(147,176,223,.2);
+  border-radius: 10px;
+  padding: 12px;
+  color: #cfe0ff;
+}
+
+.conf-points strong { color: #fdfaf4; }
+
+@media screen and (max-width: 991px) {
+  .conf-machine-flow,
+  .conf-points,
+  .conf-core-grid { grid-template-columns: 1fr; }
+}
