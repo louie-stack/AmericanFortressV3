@@ -29,6 +29,8 @@
   mask-repeat: repeat-x;
   -webkit-mask-size: auto 520px;
   mask-size: auto 520px;
+  transform: scaleY(-1);
+  transform-origin: center;
   pointer-events: none;
 }
 
