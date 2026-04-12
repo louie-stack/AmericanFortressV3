@@ -95,6 +95,66 @@
   font-size: 0.92rem;
 }
 
+.af-compare-kicker {
+  margin: 0;
+  color: #dbe8ff;
+  font-size: clamp(1.2rem, 2.4vw, 2rem);
+  letter-spacing: 0.05em;
+  font-family: Monumentextended, Arial, sans-serif;
+}
+
+.af-table-wrap-strong {
+  border-color: rgba(115, 156, 234, 0.35);
+  background: rgba(6, 22, 42, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(110, 149, 220, 0.08);
+}
+
+.af-compare-table-strong {
+  min-width: 980px;
+  background: rgba(4, 20, 38, 0.92);
+}
+
+.af-compare-table-strong th,
+.af-compare-table-strong td {
+  border-bottom-color: rgba(109, 147, 219, 0.2);
+}
+
+.af-compare-table-strong thead th {
+  background: linear-gradient(180deg, rgba(27, 62, 103, 0.95) 0%, rgba(18, 45, 77, 0.95) 100%);
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+}
+
+.af-compare-table-strong tbody td { font-size: 1.6rem; font-weight: 600; }
+.af-compare-table-strong tbody td:first-child {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #deebff;
+}
+
+.af-col-focus {
+  background: rgba(88, 125, 184, 0.2);
+}
+
+.af-compare-table-strong tbody td.af-col-focus {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.af-compare-table-strong tbody td.af-col-focus .m-native,
+.af-compare-table-strong tbody td.af-col-focus .m-partial,
+.af-compare-table-strong tbody td.af-col-focus .m-none {
+  margin-right: 6px;
+}
+
+.m-native { color: #1cd6a0; }
+.m-partial { color: #f2cc46; }
+.m-none { color: #ff4d5d; }
+.lg-native { color: #9ef2d8; }
+.lg-partial { color: #ffe48f; }
+.lg-none { color: #ff9fa9; }
+
 .af-ip-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
