@@ -269,6 +269,14 @@
 .status-dot.progress { background: #f5c96b; }
 .status-dot.planned { background: #f08f8f; }
 
+.map-content-item > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
 @media (max-width: 640px) {
   .af-team-grid { grid-template-columns: 1fr; }
 }
