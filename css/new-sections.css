@@ -246,10 +246,13 @@
 }
 
 .af-token-brief {
-  margin-top: -64px;
-  margin-bottom: 96px;
+  margin-top: 10px;
+  margin-bottom: 18px;
   color: rgba(232, 241, 255, 0.9);
   text-align: center;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .af-token-brief p {
