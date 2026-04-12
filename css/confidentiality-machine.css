@@ -1,6 +1,6 @@
 .conf-machine-section {
   background: #e6ddbb;
-  padding: 110px 0 152px;
+  padding: 122px 0 168px;
 }
 
 .conf-machine-head {
@@ -26,27 +26,27 @@
   margin: 0 auto;
   max-width: 900px;
   color: #1d4c84;
-  font-size: 1.02rem;
-  line-height: 1.42;
+  font-size: 1.12rem;
+  line-height: 1.46;
 }
 
 .conf-list {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
   display: grid;
-  gap: 52px;
+  gap: 58px;
 }
 
 .conf-item {
   display: grid;
-  grid-template-columns: 112px 1fr;
-  gap: 24px;
+  grid-template-columns: 126px 1fr;
+  gap: 26px;
   align-items: center;
 }
 
 .conf-icon {
-  width: 98px;
-  height: 98px;
+  width: 112px;
+  height: 112px;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -57,8 +57,8 @@
 .conf-icon.blue { background: #124983; }
 
 .conf-icon-img {
-  width: 58px;
-  height: 58px;
+  width: 62px;
+  height: 62px;
   object-fit: contain;
 }
 
@@ -66,9 +66,10 @@
   margin: 0 0 8px;
   color: #124983;
   font-family: Monumentextended, Arial, sans-serif;
-  font-size: clamp(1.2rem, 2.15vw, 2rem);
+  font-size: clamp(1.08rem, 1.95vw, 1.72rem);
   line-height: 1.06;
   letter-spacing: 0.001em;
+  font-weight: 600;
   white-space: nowrap;
 }
 
