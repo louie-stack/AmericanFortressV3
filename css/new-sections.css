@@ -273,6 +273,19 @@
   font-size: 0.78rem;
 }
 
+.af-logo-text {
+  min-width: 140px;
+  min-height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(133, 170, 245, 0.25);
+  border-radius: 10px;
+  color: #d4e9ff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+}
+
 @media (max-width: 640px) {
   .af-team-grid { grid-template-columns: 1fr; }
 }
