@@ -6,14 +6,7 @@
 }
 
 .section-problem::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 60px;
-  background: url('../images/top.png') center top / cover no-repeat;
+  content: none;
 }
 
 .section-problem .vector,
