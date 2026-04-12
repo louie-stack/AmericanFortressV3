@@ -142,8 +142,28 @@
 .hb-send-btn { width: 100%; justify-content: center; display: flex; border-radius: 12px; }
 .hb-send-btn .cta-text { font-size: 1.15rem; }
 
+.hide-balance-section + .section-4 {
+  margin-top: -92px;
+  padding-top: 164px;
+  background-image:
+    linear-gradient(180deg, rgba(9, 30, 67, 0) 0%, rgba(24, 33, 69, 0.92) 26%, #325f78 100%);
+}
+
+.hide-balance-section + .section-4 .frame-1321316290 {
+  row-gap: 48px;
+}
+
+.hide-balance-section + .section-4 .text-6 {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 767px) {
   .hide-balance-section { padding-top: 72px; }
   .hide-balance-text { font-size: 1.05rem; white-space: normal; }
   .hide-balance-card { border-radius: 18px; padding: 16px; }
+
+  .hide-balance-section + .section-4 {
+    margin-top: -56px;
+    padding-top: 116px;
+  }
 }
