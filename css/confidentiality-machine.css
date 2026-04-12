@@ -1,11 +1,11 @@
 .conf-machine-section {
   background: #F0E0B2;
-  padding: 74px 0 62px;
+  padding: 108px 0 110px;
 }
 
 .conf-machine-head {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 54px;
 }
 
 .conf-machine-head h2 {
@@ -15,7 +15,7 @@
   text-transform: uppercase;
   line-height: 1.08;
   letter-spacing: .01em;
-  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  font-size: clamp(2rem, 3.9vw, 3.1rem);
 }
 
 .conf-machine-head h2 span {
@@ -24,17 +24,17 @@
 
 .conf-machine-head p {
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 920px;
   color: #1d4c84;
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 1.12rem;
+  line-height: 1.48;
 }
 
 .conf-list {
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto;
   display: grid;
-  gap: 28px;
+  gap: 38px;
 }
 
 .conf-item {
@@ -62,11 +62,11 @@
 }
 
 .conf-text h3 {
-  margin: 0 0 6px;
+  margin: 0 0 10px;
   color: #124983;
   font-family: Monumentextended, Arial, sans-serif;
-  font-size: clamp(1.2rem, 2.1vw, 1.9rem);
-  line-height: 1.15;
+  font-size: clamp(1.45rem, 2.5vw, 2.25rem);
+  line-height: 1.14;
 }
 
 .conf-text p {
