@@ -256,6 +256,19 @@
   font-size: 0.95rem;
 }
 
+.status-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  margin-right: 8px;
+  vertical-align: middle;
+  box-shadow: 0 0 0 2px rgba(9, 29, 54, 0.28);
+}
+.status-dot.done { background: #54d28b; }
+.status-dot.progress { background: #f5c96b; }
+.status-dot.planned { background: #f08f8f; }
+
 @media (max-width: 640px) {
   .af-team-grid { grid-template-columns: 1fr; }
 }
