@@ -1,21 +1,21 @@
 .conf-machine-section {
-  background: #F0E0B2;
-  padding: 108px 0 110px;
+  background: #e6ddbb;
+  padding: 118px 0 124px;
 }
 
 .conf-machine-head {
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .conf-machine-head h2 {
-  margin: 0 0 12px;
+  margin: 0 0 16px;
   color: #124983;
   font-family: Monumentextended, Arial, sans-serif;
   text-transform: uppercase;
-  line-height: 1.08;
-  letter-spacing: .01em;
-  font-size: clamp(2rem, 3.9vw, 3.1rem);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+  font-size: clamp(2rem, 4.1vw, 4.1rem);
 }
 
 .conf-machine-head h2 span {
@@ -24,14 +24,14 @@
 
 .conf-machine-head p {
   margin: 0 auto;
-  max-width: 920px;
+  max-width: 980px;
   color: #1d4c84;
-  font-size: 1.12rem;
-  line-height: 1.48;
+  font-size: 1.18rem;
+  line-height: 1.42;
 }
 
 .conf-list {
-  max-width: 860px;
+  max-width: 960px;
   margin: 0 auto;
   display: grid;
   gap: 38px;
@@ -39,15 +39,15 @@
 
 .conf-item {
   display: grid;
-  grid-template-columns: 118px 1fr;
-  gap: 18px;
+  grid-template-columns: 132px 1fr;
+  gap: 24px;
   align-items: center;
 }
 
 .conf-icon {
-  width: 98px;
-  height: 98px;
-  border-radius: 50%;
+  width: 122px;
+  height: 122px;
+  border-radius: 999px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,28 +56,49 @@
 .conf-icon.red { background: #c73036; }
 .conf-icon.blue { background: #124983; }
 
-.conf-icon span {
-  font-size: 2.35rem;
-  line-height: 1;
+.conf-icon-img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
 }
 
 .conf-text h3 {
   margin: 0 0 10px;
   color: #124983;
   font-family: Monumentextended, Arial, sans-serif;
-  font-size: clamp(1.45rem, 2.5vw, 2.25rem);
-  line-height: 1.14;
+  font-size: clamp(1.55rem, 3vw, 3rem);
+  line-height: 1.06;
+  letter-spacing: 0.003em;
 }
 
 .conf-text p {
   margin: 0;
   color: #4b4b4b;
-  font-size: 1rem;
+  font-size: 1.12rem;
   line-height: 1.42;
+  max-width: 780px;
+}
+
+@media screen and (max-width: 991px) {
+  .conf-machine-section { padding: 92px 0 96px; }
+  .conf-machine-head h2 { font-size: clamp(1.7rem, 4.6vw, 3rem); }
+  .conf-machine-head p { font-size: 1.02rem; }
+  .conf-list { gap: 28px; }
+  .conf-item { grid-template-columns: 110px 1fr; gap: 18px; }
+  .conf-icon { width: 98px; height: 98px; }
+  .conf-icon-img { width: 48px; height: 48px; }
+  .conf-text h3 { font-size: clamp(1.3rem, 3vw, 2.1rem); }
+  .conf-text p { font-size: 1rem; }
 }
 
 @media screen and (max-width: 767px) {
-  .conf-machine-section { padding-top: 70px; }
-  .conf-item { grid-template-columns: 1fr; text-align: center; justify-items: center; }
-  .conf-text h3 { font-size: 1.5rem; }
+  .conf-machine-section { padding: 76px 0 82px; }
+  .conf-machine-head { margin-bottom: 34px; }
+  .conf-machine-head p { max-width: 94%; }
+  .conf-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+    justify-items: start;
+  }
+  .conf-icon { margin-bottom: 4px; }
 }
