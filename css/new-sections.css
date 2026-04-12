@@ -261,6 +261,15 @@
   line-height: 1.3;
 }
 
+.section_tokenomics .tokenomics-block {
+  row-gap: 0.85rem;
+  gap: 0.85rem;
+}
+
+.section_tokenomics .tokenomics-img {
+  margin-top: 0;
+}
+
 .status-dot {
   display: inline-block;
   width: 9px;
