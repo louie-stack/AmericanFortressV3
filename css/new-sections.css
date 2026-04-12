@@ -19,10 +19,11 @@
 .af-pillars-title-wins {
   margin: 0;
   font-family: Monumentextended, Arial, sans-serif;
-  font-size: clamp(2rem, 3.8vw, 3.45rem);
-  letter-spacing: 0.02em;
+  font-size: clamp(1.7rem, 3.1vw, 3.05rem);
+  letter-spacing: 0.01em;
   line-height: 1;
   color: #15437a;
+  white-space: nowrap;
 }
 
 .af-pillars-title-wins em {
